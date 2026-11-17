@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitZone - Kontaktua</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="index.html">FitZone</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html"><i class="fa-solid fa-house"></i><span class="off">Hasiera</span></a>
+                    <a href="klaseak.html"><i class="fa-solid fa-dumbbell"></i><span class="off">Klaseak</span></a>
+                    <a href="ordutegiak.html"><i class="fa-solid fa-clock"></i><span class="off">Ordutegiak</span></a>
+                    <a href="tarifak.html"><i class="fa-solid fa-tags"></i><span class="off">Tarifak</span></a>
+                    <a class="activa" href="kontaktua.html"><i class="fa-solid fa-phone-volume"></i><span class="off">Kontaktua</span></a>
+                </nav>
+                <div class="social">
+                    <div>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="texto-principal pequeno margen-interno">
+                <h1>Idatzi iezaguzu eta zure zalantza guztiak argituko ditugu.</h1>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="contenido">
+                <h2 class="izenburua">Kontaktua</h2>
+                <p class="azpititulua">
+                    Etorri gure gimnasiora, deitu edo bete formularioa. Pozik artatuko zaitugu.
+                </p>
+
+                <div class="kontaktu-sarea">
+                    <div class="datuak">
+                        <div class="datu-lerroa">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Telefono finkoa</strong>
+                                <a href="tel:+34943945700">943 945 700</a>
+                            </div>
+                        </div>
+                        <div class="datu-lerroa">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Helbide elektronikoa</strong>
+                                <a href="mailto:FitZone@fitzonegimnasioa.eus">FitZone@fitzonegimnasioa.eus</a>
+                            </div>
+                        </div>
+                        <div class="datu-lerroa">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Helbidea</strong>
+                                Xabier Olaskoaga Plaza
+                            </div>
+                        </div>
+                        <div class="datu-lerroa">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Ordutegia</strong>
+                                <a href="ordutegiak.html">Ordutegi guztiak ikusi</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="formularioa" id="proba">
+                        <h2 class="izenburua">Astebateko proba doan</h2>
+
+                        <label for="izena">Izena eta abizenak</label>
+                        <input type="text" id="izena" name="izena" placeholder="Zure izena" required>
+
+                        <label for="emaila">Helbide elektronikoa</label>
+                        <input type="email" id="emaila" name="emaila" placeholder="zurea@posta.eus" required>
+
+                        <label for="telefonoa">Telefonoa</label>
+                        <input type="tel" id="telefonoa" name="telefonoa" placeholder="600 000 000">
+
+                        <label for="interesa">Zer interesatzen zaizu?</label>
+                        <select id="interesa" name="interesa">
+                            <option value="proba">Astebateko proba doan</option>
+                            <option value="hilabetekoa">Hilabetekoa (35 €)</option>
+                            <option value="hiru-hilekoa">Hiru hilekoa (90 €)</option>
+                            <option value="urtekoa">Urtekoa (330 €)</option>
+                            <option value="klaseak">Klaseei buruzko informazioa</option>
+                        </select>
+
+                        <label for="mezua">Mezua</label>
+                        <textarea id="mezua" name="mezua" rows="5" placeholder="Idatzi hemen zure mezua"></textarea>
+
+                        <button class="botoia" type="submit">Bidali</button>
+                        <p class="mezu-egoera" id="egoera" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <nav class="pie">
+                <a href="klaseak.html">Klaseak</a>
+                <a href="tarifak.html">Tarifak</a>
+                <a href="kontaktua.html">Kontaktua</a>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+</html>
